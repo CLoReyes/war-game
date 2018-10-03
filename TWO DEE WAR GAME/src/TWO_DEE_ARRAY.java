@@ -26,6 +26,7 @@ public class TWO_DEE_ARRAY
 					{
 						for (int col = 0; col < map[row].length; col++)
 							{
+								
 								map[row][col] = " ";
 							}
 						System.out.println();
@@ -35,9 +36,13 @@ public class TWO_DEE_ARRAY
 		private static void playerInput()
 		
 			{
-				Scanner coordinates = new Scanner (System.in);
-				System.out.println("Select where you want to put the character ex: ");
-				String mapPos = coordinates.nextLine();
+				Scanner mapPos = new Scanner (System.in);
+				System.out.println("Select the row where you want to put the character. ex: ");
+				int rows = mapPos.nextInt();
+				
+				
+				System.out.println("Select the colomun you want to the the character in");
+				int cols = mapPos.nextInt();
 				
 				
 				
