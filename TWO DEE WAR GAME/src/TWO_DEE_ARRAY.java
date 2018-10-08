@@ -36,15 +36,19 @@ public class TWO_DEE_ARRAY
 		private static void playerInput()
 		
 			{
-				Scanner mapPos = new Scanner (System.in);
-				System.out.println("Select the row where you want to put the character. ex: ");
-				int rows = mapPos.nextInt();
+				Scanner mapType = new Scanner (System.in);
+				System.out.println("Type in the number of map you would like to play in:");
+				System.out.println("1. Bridge");
+				System.out.println("2. Mountainous");
+				System.out.println("3. Lava");
+				System.out.println("4. Water");
 				
+				int mapChoice = mapType.nextInt();
 				
-				System.out.println("Select the colomun you want to the the character in");
-				int cols = mapPos.nextInt();
-				
-				
+					if (mapChoice == 1)
+						{
+							
+						}
 				
 				
 				
